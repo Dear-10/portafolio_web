@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dayner Osores</title>
+  <meta name="description" content="Primer portafolio WEB">
+  <link rel="stylesheet" href="src/output.css" />
+</head>
+
+<body class="bg-[#0A051C] text-gray-900 font-mono">
+  <!-- HEADER -->
+  <header class="bg-[#1A0B2E] shadow-sm sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between px-6 py-4">
+      <h1 class="text-xl font-bold text-white">DAYNER OSORES</h1>
+      <nav class="space-x-7 text-white font-medium">
+        <a href="#inicio" class="hover:text-purple-400">Inicio</a>
+        <a href="#sobremi" class="hover:text-purple-400">Sobre mi</a>
+        <a href="#trabajos" class="hover:text-purple-400">Experiencias</a>
+        <a href="#proyectos" class="hover:text-purple-400">Proyectos</a>
+        <a href="#contacto" class="hover:text-purple-400">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- Presentacion -->
+  <section id="inicio" class="flex justify-center items-center pt-20 px-10 md:px-20">
+      <div class="relative w-64 h-64 flex justify-center items-center">
+        <div class="absolute [top:-1rem] [right:2.5rem] rounded-full">
+        <img src="img/Arrow.png" alt="arrow" class="w-20 h-20 object-contain">
+        </div>
+        <p class="absolute [top:-0.5rem] [right:-11rem] text-stone-50 mb-4"> Hola! Yo soy
+          <span class="text-[#7127BA]"> Dayner Osores</span>
+        <div class="absolute w-40 h-40 rounded-full filter blur-xl opacity-70" style="background-image: radial-gradient(white, #763CAC);"></div>
+          <div class="relative w-40 h-40 rounded-full">
+            <img src="img/avatar.png" alt="avatar" class="w-full h-full object-contain">
+          </div>
+      </div>
+    <div class="text-left">
+      <p class="text-sm text-stone-50 mb-2">Programador</p>
+      <h2 class="text-4xl text-stone-50 font-medium mb-4">  
+        Juzga un libro
+        <br>por su
+        <span class="inline-block relative text-[#7127BA]">
+          <div class="absolute w-40 h-10 [top:-0.2rem] [left:-0.75rem]">
+            <img src="img/cover.png" alt="oval">
+          </div>
+          <span class="relative">portada</span>
+        </span>...
+      </h2>
+      <p class="text-stone-50 text-[11px]">Porque si la portada no te impresiona, ¿Qué más podrá hacerlo?</p>
+    </div>
+  </section>
+  
+  <!-- Yo -->
+  <section id="sobremi" class="flex justify-center items-center pt-20 px-20">
+    <div class="text-left">
+      <h2 class="text-4xl text-stone-50 font-medium mb-2 flex min-h-10">
+            <span id="typed-text"></span>
+            <span id="cursor" class="text-white font-light border-r-4 border-white animate-blinking"></span>
+      </h2>
+      <p class="text-sm text-stone-50 mb-2">
+        Actualmente estudiante en la Universidad Privada del Norte
+      <p class="text-sm text-stone-50 mb-1 pt-7">
+        Desarrollo en habilidades comunicativas, participo en la búsqueda de solución de problemas, con cualidades de mentor en apoyo a compañeros de estudio para mejorar sus resultados académicos. 
+      <p class="text-sm text-stone-50 mb-1">
+        Interesado en adquirir aprendizajes y brindar aportes innovadores en las áreas de gestión del talento. 
+
+    </div>
+  </section>
+
+  <!-- Trabajos -->
+  <section id="trabajos" class="py-20 px-20">
+      <h2 class="text-4xl text-stone-50 font-bold mb-10">Experiencias Laborales</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+          <div class="bg-[#1C003D] rounded-2xl p-6 flex items-center shadow-2xl">
+              <div class="w-20 h-20 mr-6 flex-shrink-0">
+                  <img src="img/programate.jpeg" alt="PROGRAMATE" class="w-full h-full object-contain">
+              </div>
+              
+              <div>
+                  <h3 class="text-xl text-stone-50 font-semibold mb-1">Asistente de Sistemas </h3>
+                  <p class="text-xs text-stone-300 mb-4">
+                      Practicante Pre-Profesional responsable de soporte técnico y funcional en proyectos orientados a la digitalización de procesos en plataformas web.
+                  </p>
+                    <button onclick="document.getElementById('programate-modal').style.display='flex'" class="bg-[#7127BA] text-white text-xs px-4 py-2 rounded-lg hover:bg-[#8A3EDC] hover:scale-110 transition">
+                      LEER MÁS
+                    </button>
+              </div>
+          </div>
+
+          <div id="programate-modal" 
+            class="hidden fixed inset-0 backdrop-blur-sm z-50 items-center justify-center p-4"
+            onclick="document.getElementById('programate-modal').style.display='none'">
+            
+            <div class="bg-[#1C003D] rounded-xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto relative"
+                onclick="event.stopPropagation()">
+
+                <button onclick="document.getElementById('programate-modal').style.display='none'"
+                        class="absolute top-4 right-4 text-stone-50 text-2xl hover:text-purple-400 transition">
+                    &times;
+                </button>
+
+                <h3 class="text-3xl text-stone-50 font-bold mb-4">Asistente de Sistemas</h3>
+                <p class="text-sm text-purple-400 mb-6">2024</p>
+                
+                <p class="text-stone-300 mb-4">
+                    <span class="font-bold">Rol Principal: </span>Practicante Pre-Profesional de soporte técnico y funcional, enfocado en proyectos de digitalización de procesos en plataformas web.
+                </p>
+
+                <h4 class="text-xl text-stone-50 font-semibold mb-3">Responsabilidades Clave:</h4>
+                <ul class="list-disc list-inside text-stone-300 space-y-2 text-base ml-4">
+                    <li>Utilización de la plataforma <span class="font-bold">HelpDesk</span> para la gestión, creación y seguimiento de tickets, resolviendo incidencias de nivel básico e intermedio.</li>                   
+                    <li>Ejecución de pruebas funcionales y de regresión, incluyendo validación exhaustiva en interfaces de usuario y análisis de logs del sistema.</li>                    
+                    <li>Participación en el proceso de <span class="font-bold">toma de requerimientos</span> para nuevos desarrollos y mejoras en plataformas web.</li>
+                    <li>Creación de documentación de procesos y funcionalidades, y provisión de capacitaciones básicas a usuarios finales para facilitar la trazabilidad y el conocimiento dentro del equipo.</li>
+                </ul>
+
+                <div class="mt-6">
+                    <button onclick="document.getElementById('programate-modal').style.display='none'"
+                        class="bg-[#7127BA] text-white px-6 py-2 rounded-lg hover:bg-[#8A3EDC] transition">
+                        Cerrar
+                    </button>
+                </div>
+              </div>
+          </div>
+          
+          <div class="bg-[#1C003D] rounded-2xl p-6 flex items-center shadow-2xl">
+              <div class="w-20 h-20 mr-6 flex-shrink-0">
+                  <img src="img/salesland.jpeg" alt="SALES" class="w-full h-full object-contain">
+              </div>
+              <div>
+                  <h3 class="text-xl text-stone-50 font-semibold mb-1">Asistente en gestión de servicios</h3>
+                  <p class="text-xs text-stone-300 mb-4">
+                      Responsable de soporte a usuarios y a la digitalización de procesos en plataformas web.
+                  </p>
+                  <button onclick="document.getElementById('salesland-modal').style.display='flex'" class="bg-[#7127BA] text-white text-xs px-4 py-2 rounded-lg hover:bg-[#8A3EDC] hover:scale-110 transition">
+                    LEER MÁS
+                  </button>
+              </div>
+          </div>
+
+          <div id="salesland-modal" 
+            class="hidden fixed inset-0 backdrop-blur-sm z-50 items-center justify-center p-4"
+            onclick="document.getElementById('salesland-modal').style.display='none'">
+            
+            <div class="bg-[#1C003D] rounded-xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto relative"
+                onclick="event.stopPropagation()">
+
+                <button onclick="document.getElementById('salesland-modal').style.display='none'"
+                        class="absolute top-4 right-4 text-stone-50 text-2xl hover:text-purple-400 transition">
+                    &times;
+                </button>
+
+                <h3 class="text-3xl text-stone-50 font-bold mb-4">Asistente en Gestión de Servicios</h3>
+                <p class="text-sm text-purple-400 mb-6">2025</p>
+                
+                <p class="text-stone-300 mb-4">
+                    <span class="font-bold">Rol Principal: </span> Responsable de soporte a usuarios y a la digitalización de procesos en plataformas web.
+                </p>
+
+                <h4 class="text-xl text-stone-50 font-semibold mb-3">Responsabilidades Clave:</h4>
+                <ul class="list-disc list-inside text-stone-300 space-y-2 text-base ml-4">
+                    <li>Manejo integral de requerimientos e incidencias utilizando la plataforma <span class="font-bold">Nexum</span> para gestión y seguimiento.</li>
+                    <li>Clasificación y priorización de solicitudes a través de la plataforma <span class="font-bold">Dito</span>, asegurando la trazabilidad.</li>
+                    <li>Monitoreo para asegurar el cumplimiento de tiempos de respuesta adecuados definidos por el servicio.</li>
+                    <li>Proporcionar soporte continuo para la operación y resolución de problemas en plataformas tecnológicas.</li>
+                </ul>
+
+                <div class="mt-6">
+                    <button onclick="document.getElementById('salesland-modal').style.display='none'"
+                        class="bg-[#7127BA] text-white px-6 py-2 rounded-lg hover:bg-[#8A3EDC] transition">
+                        Cerrar
+                    </button>
+                </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="relative bg-[#0A051C] text-stone-200 pt-20 px-6 overflow-hidden">
+    <div class="container mx-auto text-center">
+
+      <h2 class="text-2xl font-light max-w-2xl mx-auto">
+        Actualmente estoy buscando unirme a un
+        <span class="font-semibold text-purple-400">equipo multifuncional</span>
+        que valore mejorar la vida de las personas a través del diseño accesible.
+      </h2>
+
+      <div class="w-full mx-auto max-w-xl my-12 overflow-hidden">
+            <div class="flex justify-center animate-marquee">
+                
+                <div class="flex justify-center items-center gap-8 mr-8 flex-shrink-0">
+                    <div class="w-12 h-12 bg-[#261A49] rounded-full flex items-center justify-center transition hover:scale-110"><img src="img/figma.png" alt="Figma" class="w-8 h-8"></div>
+                    <div class="w-12 h-12 bg-[#261A49] rounded-full flex items-center justify-center transition hover:scale-110"><img src="img/react.png" alt="React" class="w-8 h-8"></div>
+                    <div class="w-12 h-12 bg-[#261A49] rounded-full flex items-center justify-center transition hover:scale-110"><img src="img/c.png" alt="C#" class="w-8 h-8"></div>
+                    <div class="w-12 h-12 bg-[#261A49] rounded-full flex items-center justify-center transition hover:scale-110"><img src="img/nodejs.png" alt="Node.js" class="w-8 h-8"></div>
+                    <div class="w-12 h-12 bg-[#261A49] rounded-full flex items-center justify-center transition hover:scale-110"><img src="img/javascript.png" alt="JavaScript" class="w-8 h-8"></div>
+                    <div class="w-12 h-12 bg-[#261A49] rounded-full flex items-center justify-center transition hover:scale-110"><img src="img/html.png" alt="Html" class="w-8 h-8"></div>
+                </div>
+                <div class="flex justify-center items-center gap-8 mr-8 flex-shrink-0">
+                    <div class="w-12 h-12 bg-[#261A49] rounded-full flex items-center justify-center transition hover:scale-110"><img src="img/figma.png" alt="Figma" class="w-8 h-8"></div>
+                    <div class="w-12 h-12 bg-[#261A49] rounded-full flex items-center justify-center transition hover:scale-110"><img src="img/react.png" alt="React" class="w-8 h-8"></div>
+                    <div class="w-12 h-12 bg-[#261A49] rounded-full flex items-center justify-center transition hover:scale-110"><img src="img/c.png" alt="C#" class="w-8 h-8"></div>
+                    <div class="w-12 h-12 bg-[#261A49] rounded-full flex items-center justify-center transition hover:scale-110"><img src="img/nodejs.png" alt="Node.js" class="w-8 h-8"></div>
+                    <div class="w-12 h-12 bg-[#261A49] rounded-full flex items-center justify-center transition hover:scale-110"><img src="img/javascript.png" alt="JavaScript" class="w-8 h-8"></div>
+                    <div class="w-12 h-12 bg-[#261A49] rounded-full flex items-center justify-center transition hover:scale-110"><img src="img/html.png" alt="Html" class="w-8 h-8"></div>
+                </div>
+                <div class="flex justify-center items-center gap-4 md:gap-8 mr-8 flex-shrink-0">
+                    <div class="w-12 h-12 bg-[#261A49] rounded-full flex items-center justify-center transition hover:scale-110"><img src="img/figma.png" alt="Figma" class="w-8 h-8"></div>
+                    <div class="w-12 h-12 bg-[#261A49] rounded-full flex items-center justify-center transition hover:scale-110"><img src="img/react.png" alt="React" class="w-8 h-8"></div>
+                    <div class="w-12 h-12 bg-[#261A49] rounded-full flex items-center justify-center transition hover:scale-110"><img src="img/c.png" alt="C#" class="w-8 h-8"></div>
+                    <div class="w-12 h-12 bg-[#261A49] rounded-full flex items-center justify-center transition hover:scale-110"><img src="img/nodejs.png" alt="Node.js" class="w-8 h-8"></div>
+                    <div class="w-12 h-12 bg-[#261A49] rounded-full flex items-center justify-center transition hover:scale-110"><img src="img/javascript.png" alt="JavaScript" class="w-8 h-8"></div>
+                    <div class="w-12 h-12 bg-[#261A49] rounded-full flex items-center justify-center transition hover:scale-110"><img src="img/html.png" alt="Html" class="w-8 h-8"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Proyectos-->
+  <section id="proyectos" class="relative pt-30 px-6  bg-[#0A051C] text-stone-50 overflow-hidden">
+    <div class="container mx-auto space-y-5"> <div class="flex flex-rowitems-start justify-between gap-12">
+            
+            <div class="relative z-10 w-1/2">
+                <div class="bg-[#261A49]/50 backdrop-blur-sm p-8 rounded-xl shadow-2xl transition hover:scale-110">
+                    <p class="text-sm font-light text-purple-400 mb-2">Proyecto Universitario</p>
+                    <h3 class="text-3xl font-semibold mb-6">Salud Mental Perú</h3>
+                    <p class="text-base font-light leading-relaxed">
+                        En colaboración, desarrollé una plataforma web de autoayuda psicológica como proyecto de tesis, diseñada específicamente para brindar soporte emocional a personas en comunidades vulnerables. Esta iniciativa digital funciona como un recurso integral, ofreciendo acceso a videos de apoyo, documentación especializada y cuestionarios interactivos de autogestión, logrando un impacto social directo al facilitar herramientas de salud mental de manera accesible y remota.
+                    </p>
+                </div>
+                <div class="mt-6 flex gap-3 text-2xl">
+                    <img src="img/check.png">
+                    <img src="img/check.png">
+                </div>
+            </div>
+
+            <div class="relative w-1/2 h-[450px] -mt-5">
+                <div class="absolute inset-0">
+                    <img src="img/salud_mental.png" alt="Project1" class="absolute  object-contain w-[120%] h-auto left-[-20%] z-0 rounded-lg shadow-2xl border border-white/10">
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-row-reverse items-start justify-between gap-12">
+            
+            <div class="relative z-10 w-1/2">
+                <div class="bg-[#261A49]/50 backdrop-blur-sm p-8 rounded-xl shadow-2xl transition hover:scale-110 ">
+                    <p class="text-sm font-light text-purple-400 mb-2">Proyecto Universitario</p>
+                    <h3 class="text-3xl font-semibold mb-6">UnderGroove</h3>
+                    <p class="text-base font-light leading-relaxed">
+                      En colaboración, se desarroló una plataforma de comercio electrónico en WordPress para migrar un negocio de retail (prendas de segunda mano) de la venta presencial a una operación online completa. El lanzamiento y la difusión se gestionaron utilizando GoDaddy.
+                    </p>
+                </div>
+                <div class="mt-6 flex gap-3 text-2xl justify-end">
+                    <img src="img/check.png">
+                    <img src="img/check.png">
+                </div>
+            </div>
+
+            <div class="relative w-1/2 h-[450px] -mt-5">
+                <div class="absolute inset-0">
+                    <img src="img/undergroove.png" alt="Project2" class="absolute  object-contain w-[120%] h-auto right-[-20%] z-0 rounded-lg shadow-2xl border border-white/10">
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Contacto --> 
+  <section id="contacto" class="py-5 px-20 bg-[#0A051C] text-stone-50">
+    <div class="container mx-auto max-w-2xl">
+
+        <h2 class="text-4xl font-semibold mb-10">Contacto</h2>
+
+        <p class="text-lg font-light mb-6">
+          Busco unirme a un equipo multidisciplinario que valora mejorar la vida de las personas mediante el diseño accesible. ¿Tienes algún proyecto en mente? Contáctame.</p>
+        <a href="mailto:dayner.osores@gmail.com" 
+           class="text-sm font-medium text-white hover:text-purple-400 transition block mb-8">
+            dayner.osores@gmail.com
+        </a>
+
+        <div class="flex items-center gap-6 text-3xl">
+            <a href="https://www.instagram.com/deymaaar/" aria-label="Instagram" class="">
+                <img src="img/insta.png">
+                </a>
+            
+            <a href="https://www.linkedin.com/in/dayner-andre-osores-tacza-219b6a389/" aria-label="LinkedIn" class="w-8 h-8">
+                <img src="img/linkedIn.png">
+                </a>
+
+            <a href="mailto:dayner.osores@gmail.com" aria-label="Google" class="hover:text-purple-400 transition">
+                <img src="img/google.png">
+                </a>
+            <a href="https://wa.me/51933257764?text=Hola%20Dayner,%20vengo%20de%20tu%20Portafolio%20Web." 
+                target="_blank" 
+                aria-label="WhatsApp" 
+                class= "w-8 h-8">
+                  <img src="img/whatsapp.png"> 
+              </a>
+        </div>
+        
+    </div>
+  </section>
+
+  <footer class="bg-[#0A051C] py-10">
+    <div class="max-w-6xl mx-auto px-6">        
+        <div class="flex flex-row justify-center items-center text-center">
+            <p class="text-sm text-stone-500 mt-6">
+                © <span id="current-year"></span> Dayner Osores. Todos los derechos reservados.
+            </p>
+        </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

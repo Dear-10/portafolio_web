@@ -1,0 +1,35 @@
+@import "tailwindcss";
+/* Parpadeo*/
+@keyframes blinking {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate-blinking {
+    animation: blinking 0.8s infinite;
+}
+/* Parpadeo*/
+
+
+/*PASARELA*/
+@keyframes marquee {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-41.5%);
+    }
+}
+
+.animate-marquee {
+    width: 200%; 
+    animation: marquee 5s linear infinite; 
+}
+/*PASARELA*/
